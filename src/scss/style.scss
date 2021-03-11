@@ -1,0 +1,68 @@
+@import 'fonts';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    font-family: 'PT_Sans', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    background: #182A35;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.it-wrapper {
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+@import 'intro';
+@import 'menu';
+@import 'card';
+
+.it-materials {
+    padding: 50px 15px;
+
+    .it-materials-box {
+        display: flex;
+        flex-wrap: wrap;
+    }
+}
+
+.it-title {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 41px;
+    color: #FFFFFF;
+    margin-bottom: 30px;
+    transition: .3s;
+
+    &:hover a {
+        color: #E33719;
+    }
+}
+
+.it-btn {
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 24px;
+    text-align: center;
+    color: #E33719;
+    padding: 12px 15px;
+    display: block;
+    width: 100%;
+    background: #FFFFFF;
+    margin-top: 10px;
+    transition: .3s;
+
+    &:hover {
+        color: #182A35;
+    }
+}
